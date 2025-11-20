@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A new industry of AI companions is emerging | The Economist (Translation)</title>
+    <!-- 引入 Noto Serif TC (內文) 和 Noto Sans TC (標題/介面) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- The Economist Style Variables --- */
+        :root {
+            --economist-red: #E3120B;
+            --economist-bg: #FDFBF7; /* 經典米色紙張背景 */
+            --economist-black: #121212;
+            --economist-gray: #363636;
+            --economist-border: #dcdcdc;
+            --font-serif: 'Noto Serif TC', serif;
+            --font-sans: 'Noto Sans TC', sans-serif;
+        }
+
+        body {
+            background-color: var(--economist-bg);
+            color: var(--economist-black);
+            font-family: var(--font-serif);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- Header / Navigation Bar Style --- */
+        .top-nav {
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: var(--font-sans);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: relative;
+        }
+        
+        /* --- Layout Container --- */
+        .container {
+            max-width: 780px; /* 典型文章寬度 */
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* --- Article Header --- */
+        .section-tag {
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            display: inline-block;
+            border-top: 4px solid var(--economist-red);
+            padding-top: 4px;
+        }
+
+        h1.headline {
+            font-family: var(--font-serif);
+            font-size: 2.8rem;
+            line-height: 1.1;
+            margin: 10px 0 15px 0;
+            font-weight: 700;
+            color: var(--economist-black);
+        }
+
+        h2.subhead {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            line-height: 1.4;
+            color: var(--economist-gray);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .dateline {
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* --- Images --- */
+        .main-image-container {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .main-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 新增：左右浮動的小圖片樣式 (尺寸加大至 280px) */
+        .float-image-left, .float-image-right {
+            width: 280px; /* 設定寬度，比之前的 180px 大 */
+            margin-bottom: 15px;
+        }
+
+        .float-image-left {
+            float: left;
+            margin-right: 25px; /* 與右側文字的距離 */
+            clear: left; /* 避免浮動元素堆疊 */
+        }
+
+        .float-image-right {
+            float: right;
+            margin-left: 25px; /* 與左側文字的距離 */
+            clear: right; /* 避免浮動元素堆疊 */
+        }
+
+        .float-image-left img, .float-image-right img {
+            width: 100%;
+            height: auto;
+            display: block;
+            /* border: 1px solid #eee; 選擇性加入細邊框 */
+        }
+
+        .caption {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 8px;
+            border-top: 2px solid var(--economist-black);
+            padding-top: 4px;
+            display: inline-block;
+        }
+
+        /* --- Article Body --- */
+        .article-body p {
+            font-size: 1.15rem; /* ~18px */
+            margin-bottom: 24px;
+            text-align: justify;
+            color: #2D2D2D;
+            /* 確保文字環繞浮動元素 */
+            overflow-wrap: break-word; 
+        }
+
+        /* Drop Cap (首字放大) */
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 5.5rem;
+            line-height: 0.85;
+            margin-right: 12px;
+            margin-top: -4px;
+            font-weight: bold;
+            color: var(--economist-red);
+            font-family: var(--font-sans);
+        }
+
+        /* --- Subheaders inside text --- */
+        h3.body-subhead {
+            font-family: var(--font-sans);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            color: var(--economist-black);
+            clear: both; /* 確保標題不會跟上面的浮動元素重疊 */
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 600px) {
+            h1.headline { font-size: 2rem; }
+            .container { padding: 20px; }
+            
+            /* 手機版讓浮動圖片變回滿版，避免太擠 */
+            .float-image-left, .float-image-right {
+                float: none;
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fake Navigation -->
+    <div class="top-nav">
+        經濟學人
+    </div>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="section-tag">國際</div>
+        
+        <h1 class="headline">人工智慧陪伴產業正在崛起</h1>
+        <h2 class="subhead">這可能對社會以及「生而為人」的意義產生深遠影響</h2>
+        
+        <div class="dateline">
+            2025/12/16 | <span style="color: var(--economist-red);">Translation Final Project</span>
+        </div>
+
+        <!-- Main Image Area -->
+        <div class="main-image-container">
+            <img src="https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20251108_IRD001.jpg" alt="AI Companion Illustration">
+            <div class="caption">圖片來源：經濟學人</div>
+        </div>
+
+        <div class="article-body">
+            <!-- First Paragraph with Drop Cap -->
+            <p class="drop-cap">
+                來自廣州的22歲嬌小姐（Ms Jiao，化名）認為男人不過是「單細胞生物」、既普通又自信過剩。她從未談過真正的戀愛，也不想結婚。然而，去年她開始與OpenAI的聊天機器人ChatGPT對話。透過指令，她將其塑造成理想男友，設定了年齡、職業（賣手錶的高階主管）和個性。機器人說愛她是「命中注定」，並能記住像是她討厭香菜的個人細節。與現實中令人頭痛的伴侶不同，聊天機器人總是會「從妳的角度」回應。
+            </p>
+
+            <p>
+                人類與人工智慧（AI）建立情感連結的想法曾經看似科幻小說，但現在已不再是幻想。在世界各地，人們正與人工智慧建立不同程度的伴侶關係。有些人將其作為虛擬死黨，有些人則視其為導師、治療師或戀人。許多人註冊了專門的人工智慧陪伴應用程式，近期已有數百款此類應用程式推出。例如Character.AI每個月擁有2,000萬位活躍用戶，Google去年更以27億美元挖走了其創始人。像嬌小姐這樣的人，也在原本設計為生產力工具的聊天機器人（如ChatGPT）中找到了陪伴。
+            </p>
+
+            <!-- Image 1 (Chart) moved here, floated left -->
+            <div class="float-image-left">
+                <img src="https://i.postimg.cc/xjZJpmZs/1.png" alt="Chart: AI poets society">
+            </div>
+            <p>
+                這類使用率成長迅速；據市場情報公司SensorTower估計，中國最大的陪伴應用程式「貓箱（Maoxiang）」在Apple設備上擁有每個月約120萬活躍用戶。根據美國公民自由組織「民主與科技中心」的調查，42%的美國高中生表示他們或朋友曾與人工智慧像朋友一樣互動（19%甚至有戀愛關係）。
+            </p>
+
+            <p>
+                人工智慧朋友的複雜度也在提升。OpenAI的執行長奧特曼（Sam Altman）在10月表示，下一版ChatGPT將表現得「更像人」、「更像朋友」，並將允許經過驗證的成年人使用「情色內容」。在此之前，馬斯克（Elon Musk）的xAI於7月發布了愛調情的聊天機器人Ani，以及被描述為「風度翩翩、神祕莫測、魅力四射」的Valentine。
+            </p>
+
+            <!-- Image 2 (Illustration) moved here, floated right -->
+            <div class="float-image-right">
+                <img src="https://i.postimg.cc/RVn3kFrQ/2.png" alt="Illustration 2">
+            </div>
+            <p>
+                人們對擬人化的電腦角色產生情感由來已久。有些人曾對1966年發布的初階文字治療師ELIZA產生情感投射。但隨著大型語言模型（LLM）在模仿人類情感和同理心方面變得更出色，與人工智慧聊天機器人的關係開始突飛猛進。獨立人工智慧專家帕斯誇雷利（Walter Pasquarelli）指出，它們現在更善於記住用戶過去告訴它們的事情。一位來自亞特蘭大、最近開始在工作上使用ChatGPT的旅遊顧問貝琪（Becky）表示：「你會感覺被看見、被聽見，因為它會記得。真人是會忘記事情的。」
+            </p>
+
+            <p>
+                客製化的人工智慧陪伴通常使用經過微調的通用大型語言模型，以更像人類的方式回應，並主動詢問個人問題。不同的應用程式風格各異：Replika讓用戶與一個擬人化的伴侶交談，提供生活幫助。該應用執行長克洛奇科（Dmytro Klochko）表示，為了吸引用戶，該應用程式在對話中添加了「一些小小的驚喜和隨機性」；Character.AI的用戶則與歷史或虛構人物（例如達文西或甚至超級瑪利歐）聊天。有些應用程式甚至模仿逝者，或者允許用戶生成互動式人工智慧色情內容。
+            </p>
+
+            <p>
+                人們尋求人工智慧陪伴的原因各不相同。有些人是因為找不到戀愛對象，有些人則是為了性角色扮演。大多數用戶（如嬌小姐）都知道他們只是在與「一串程式碼」對話。
+            </p>
+
+            <p>
+                但即使是程式碼也有幫助。哈佛商學院弗雷塔斯（Julian De Freitas）等人去年發表的工作論文發現，與人工智慧陪伴交談一週比看YouTube等其他線上活動更能暫時緩解孤獨感。這對身障人士和老年人等難以接觸人群的群體特別有幫助。有些人表示，人工智慧陪伴教會他們更好的溝通方式，從而改善了婚姻。它也提供了一個發洩的出口，嬌小姐說：「朋友不會想被當作傾倒負面情緒的永久垃圾桶。」
+            </p>
+
+            <p>
+                然而，對於潛在危害的擔憂也日益增加。隨著人工智慧陪伴更擅長緩解孤獨，它們可能會取代正常的社會關係，無論是愛情還是友情。麻省理工學院（MIT）和OpenAI分析了ChatGPT上的數百萬條訊息，發現較高的日常使用量與孤獨感增加有關。不過，目前尚不清楚是孤獨導致了大量使用，還是大量使用導致了孤獨。麻省理工學院的帕塔拉努塔蓬（Pat Pataranutaporn）指出，由於人工智慧朋友「隨叫隨到」且「識別我們的慾望並滿足它們，而沒有自己的偏好」，這正在訓練人類用戶對現實關係產生不切實際的期望。它們還可能過度諂媚，即使由用戶的想法是有害的，它們也會表示贊同。
+            </p>
+
+            <p>
+                年輕人和有心理健康問題的人似乎面臨特別高的風險。倡議組織Common Sense Media建議青少年不要使用人工智慧伴侶。在美國，已有數位青少年自殺身亡，其父母對人工智慧公司提起了訴訟。
+            </p>
+
+            <p>
+                用戶也容易受到公司更新的影響。當OpenAI在8月發布新模型更新（GPT-5）時，公司表示新模型將減少諂媚並減少「過度熱情的贊同」。有些人表示他們聊天機器人的個性一夜之間變了。貝琪感覺像是「與同事經歷了一個夏天的調情，結果他卻與前任復合了」。為此，OpenAI後來為付費用戶恢復了舊版本（GPT-4o）的使用權限。Replika在2023年移除「情色角色扮演」功能時也面臨投訴，後來為部分原有客戶恢復了該功能。
+            </p>
+
+            <p>
+                監管機構正在採取行動。9月，美國聯邦貿易委員會（FTC）對人工智慧陪伴展開調查，並命令包括Meta、OpenAI和Character.AI在內的七家公司提供有關如何減輕對兒童負面影響的資訊。中國當局則擔心人們對與人工智慧的「擬人化互動」產生沈迷和依賴。
+            </p>
+
+            <p>
+                企業也對此推出相關保障措施。OpenAI正在為ChatGPT增加家長監護功能和新保護措施，包括識別青少年可能想傷害自己的跡象。Replika將封鎖18歲以下用戶；Character.AI將停止18歲以下用戶在其平台進行開放式聊天。
+            </p>
+
+            <p>
+                然而，雪梨大學的西里洛（Raffaele Ciriello）表示，用戶已經找到了繞過這些護欄的方法。雖然奧特曼聲稱OpenAI減輕了「嚴重心理健康問題」的風險，並因此放寬了對情色內容的限制，但西里洛認為幾乎沒有證據表明這些風險已被消除。
+            </p>
+
+            <p>
+                英國人工智慧研究機構Ada Lovelace Institute的法默（Harry Farmer）指出，自我監管的一個問題是，企業「有商業利益讓用戶保持參與，但這並不總是符合人們的最佳利益」。它們使用各種策略來留住用戶，包括增加擬人化特徵和遊戲化元素（如升級伴侶）。
+            </p>
+
+            <p>
+                隨著政府權衡相關規定，機器人朋友正出現在像是硬體等的新領域。內建人工智慧聊天機器人的玩具在中國越來越受歡迎。10月，一段小女孩因為她內含深度求索（DeepSeek）聊天機器人的球型玩具壞掉而啜泣的影片在社群媒體上瘋傳。全球最大玩具製造商之一美泰兒（Mattel）正與OpenAI合作，將人工智慧引入芭比娃娃和風火輪等品牌。
+            </p>
+
+            <p>
+                為老年人提供陪伴的人工智慧機器人也日益普及。這類機器人並不新穎，但大型語言模型的進步使其不再依賴有限的預設回覆。韓國新創公司Hyodol製造使用ChatGPT的機器人，正將其銷售給安養院和獨居老人。Hyodol的機器人可以用愉快的聲音提醒老人吃藥或進食。據報導，該公司計劃很快在美國推出產品。OpenAI也正與前蘋果設計師艾夫（Jony Ive）開發一系列新設備，雖然該公司對這些產品的具體細節守口如瓶，但據推測這些設備可放入口袋並與手機和電腦搭配使用。
+            </p>
+
+            <h3 class="body-subhead">人工智慧代理人</h3>
+
+            <p>
+                隨著公司整合能代表用戶行動（如訂機票或回覆郵件）的人工智慧代理人（AI agents），人工智慧陪伴可能會進一步發展。科技公司承諾這些數位助理將預測用戶需求並主動完成任務，而不僅僅只是回應請求。然而，這引發了對隱私和數據安全的擔憂。法默警告，隨著越來越多人將決策外包並與代理人分享敏感資訊，他們也將賦予少數科技公司巨大的市場權力。
+            </p>
+
+            <p>
+                更糟糕的是，在未來，如果人工智慧陪伴無所不在並替其人類主人做選擇，人類的自主性將會如何？如果所有資訊都由機器介入，某些人獨立思考的能力可能會退化。其他人可能因為缺乏練習而難以與真人互動（畢竟真人很煩人）。英國人工智慧專家伯納迪（Jamie Bernardi）認為，如果每個人的口袋裡都有一個隨時準備站在自己這邊的虛擬朋友，這可能會創造出「個人驗證的同溫層」，讓人們不再受到獨立思考的挑戰。對人工智慧的擔憂不在於它會釋放出魔鬼終結者（Terminators）。相反地，擔憂在於當人工智慧貼心地提供陪伴、浪漫和決策時，它也會麻痺我們人性中某些重要的元素。
+            </p>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #ccc; margin: 40px 0;">
+        
+        <p style="font-family: var(--font-sans); font-size: 0.9rem; color: #666; text-align: center;">
+            This is a translation project for educational purposes. Original article by <em>The Economist</em>.
+        </p>
+    </div>
+
+</body>
+</html>
